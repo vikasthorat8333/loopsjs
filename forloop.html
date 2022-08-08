@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> for Loop</title>
+</head>
+<body>
+     <h2> java script For loop</h2>
+     <p id = "demo"> </p>
+     <p id = demo1></p>
+     <p id = demo2></p>
+
+     <script> 
+     const choco = ["cadburry", "M&m", "Snickers", "Fererro", "rocher"];
+     let i = 0;
+     let length = choco.length;
+     let text = "";
+     for( ; i < length; ) {
+        text += choco[i] + "<br>";
+        i++;
+     }
+     document.getElementById("demo").innerHTML = text;
+
+
+     //java script for in loop//
+
+     const courses_offerd = [ "C", "C++", "Java", "python"];
+     let mark = "";
+     for ( let x in courses_offerd){
+        mark += courses_offerd[x] + "<br>";
+     }
+          document.getElementById("demo1").innerHTML = mark;
+
+          // for of loop//
+          let language = "Skill Academy";
+          let lang = "";
+          for (let x of language){
+            lang += x + "<br>";
+          }
+          document.getElementById("demo2").innerHTML = lang;
+          //while loop //
+
+          let str = "";
+          let j  = 0;
+          while ( j < 5) {
+            str += "<br> the no is " + j;
+            j++;
+
+          }
+          document.write(str);
+    </script>
+    
+</body>
+</html>
